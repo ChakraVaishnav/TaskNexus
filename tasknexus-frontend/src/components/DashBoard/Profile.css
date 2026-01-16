@@ -1,0 +1,208 @@
+/* Profile Container */
+.profile-container {
+  background-color: #000; /* Black background */
+  color: #d3d3d3; /* Light grey text */
+  padding: 20px;
+  border-radius: 12px;
+  width: 60%;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.profile-container .heading {
+  margin-left: -10px;
+  text-decoration: underline;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.ProfilePic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  margin-left: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+/* Headings & Text */
+h4 {
+  color: #5eb3f5;
+}
+
+p {
+  color: #ccc;
+}
+
+/* Bio Section */
+.bio {
+  background-color: #1a1a1a;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.bio,
+.dob,
+.gender {
+  margin-top: 5px;
+}
+
+/* Edit Button */
+.editButton {
+  margin-top: 5px;
+  background-color: #e63946;
+}
+.editButton:hover {
+  background-color: #c53b47;
+}
+
+/* Edit Section */
+.edit {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+/* Input & Textarea Styles */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #5eb3f5;
+  border-radius: 5px;
+  background-color: #333;
+  color: #d3d3d3;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Save Button */
+.saveButton {
+  background-color: #5eb3f5;
+  color: #000;
+}
+
+/* Cancel Button */
+.cancelButton {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.edit .actions {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Profile Actions */
+.profile-actions {
+  margin-top: 20px;
+}
+
+/* Profile Photo Preview */
+.profile-photo-preview {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .profile-container {
+    width: 90%;
+    padding: 15px;
+    margin-top: 100px;
+  }
+
+  .profile-card,
+  .edit {
+    padding: 15px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .ProfilePic {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-photo {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .edit .actions {
+    flex-direction: column;
+  }
+
+  .profile-photo-preview {
+    width: 120px;
+    height: 120px;
+  }
+}
+/* Move only profile picture and username slightly to the left on desktop */
+@media (min-width: 769px) {
+  .profile-header {
+    margin-left: 0px; /* Or use transform: translateX(-20px); for fine-tuning */
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .ProfilePic {
+    justify-content: flex-start;
+  }
+}

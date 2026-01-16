@@ -1,0 +1,70 @@
+* {
+    overflow-x: hidden;
+}
+
+.planned-tasks-container {
+    padding: 20px;
+    background-color: #000000; /* Dark background */
+    color: #f5f6fa;
+    min-height: 100vh;
+    margin: 0 auto; /* Centers the container horizontally */
+    
+    width: 1300px;
+    margin-left: 250px;
+}
+
+.planned-tasks-container h2 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.planned-tasks-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; /* Center the grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px); /* Fixed width for items */
+    gap: 20px; /* Spacing between items */
+    justify-content: center; /* Center the grid within the container */
+    width: 100%;
+    max-width: 1300px; /* Limit the grid width for alignment */
+}
+
+.task-item {
+    padding: 15px;
+    background-color: #2f3640;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Fixed width for each task item */
+}
+
+.task-item h3 {
+    margin: 0 0 5px 0;
+    color: #00a8ff;
+}
+
+.task-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #dcdde1;
+}
+
+.task-actions button {
+    background-color: #00a8ff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.task-actions button:hover {
+    opacity: 0.9;
+}
+
+.task-actions button.delete {
+    background-color: #e84118;
+}

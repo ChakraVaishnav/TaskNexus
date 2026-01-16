@@ -1,0 +1,228 @@
+.features-container {
+    height: 100vh;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    width: 1300px;
+    margin-left: 250px;
+  }
+  
+  .features-container h2 {
+    color: #4e9eff;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .features-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1rem;
+    color: #d1d1d1;
+    line-height: 1.8;
+  }
+  
+  .features-list li {
+    background-color: #292929;
+    margin-bottom: 0.8rem;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .features-list li:hover {
+    transform: translateX(5px);
+    background-color: #333333;
+  }
+  
+  .features-list li::before {
+    font-size: 1.2rem;
+  }
+  
+  .status {
+    color: #4e9eff;
+    font-weight: bold;
+  }
+  
+  .status.planned {
+    color: #ffa500;
+  }
+  
+  .status.overdue {
+    color: #ff4d4d;
+  }
+  
+  .priority {
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .priority.high {
+    background-color: #ff4d4d;
+    color: #fff;
+  }
+  
+  .priority.medium {
+    background-color: #ffa500;
+    color: #fff;
+  }
+  
+  .priority.low {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .note {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #4e9eff;
+  }
+  
+  .note a {
+    color: #4e9eff;
+    text-decoration: none;
+  }
+  
+  .note a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Default styles for large screens (1300px width) */
+.features-container {
+  width: 1300px;
+  margin-left: 250px;
+  padding: 2rem;
+}
+
+/* Medium screens: Tablets and small laptops (1024px - 1300px) */
+@media (max-width: 1300px) {
+  .features-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 1.5rem;
+  }
+
+  .features-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .features-list li {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .note {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets and smaller devices (768px - 1024px) */
+@media (max-width: 1024px) {
+  .features-container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 1.2rem;
+  }
+
+  .features-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .features-list li {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .note {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile devices: Small screens (601px - 768px) */
+@media (max-width: 768px) {
+  .features-container {
+    width: 100%;
+    margin-left: 0;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .features-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .features-list li {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .note {
+    font-size: 0.85rem;
+  }
+}
+
+/* Small mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .features-container {
+    width: 100%;
+    padding: 0.8rem;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .features-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .features-list li {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    gap: 5px;
+  }
+
+  .priority {
+    font-size: 0.75rem;
+    padding: 3px 6px;
+  }
+
+  .note {
+    font-size: 0.8rem;
+  }
+}
+
+/* Extra small devices (up to 400px) */
+@media (max-width: 400px) {
+  .features-container {
+    padding: 0.6rem;
+  }
+
+  .features-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .features-list li {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .priority {
+    font-size: 0.7rem;
+    padding: 2px 5px;
+  }
+
+  .note {
+    font-size: 0.75rem;
+  }
+}

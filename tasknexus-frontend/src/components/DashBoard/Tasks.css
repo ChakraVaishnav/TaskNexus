@@ -1,0 +1,214 @@
+* {
+  overflow-x: hidden;
+}
+
+.tasks-container {
+  padding: 20px;
+  background-color: #000000; /* Dark background */
+  color: #f5f6fa;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 1300px;
+  margin-left: 250px;
+}
+
+.tasks-container h2 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.tasks-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto; /* Center the grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px); /* Fixed width for items */
+  gap: 20px; /* Spacing between items */
+  justify-content: center; /* Center the grid within the container */
+  width: 100%;
+  max-width: 1300px; /* Limit the grid width for alignment */
+}
+
+.task-item {
+  padding: 15px;
+  background-color: #2f3640;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  min-height: 200px; /* Consistent height for all tasks */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease; /* Smooth transitions for height changes */
+}
+
+.task-item h3 {
+  margin: 0 0 5px 0;
+  color: #00a8ff;
+}
+
+.task-item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #dcdde1;
+}
+.task-actions{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.task-actions button {
+  background-color: #00a8ff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+  
+  width: 100%;
+  text-align: center;
+}
+.task-actions .delete{
+  background-color: rgb(255, 51, 51);
+}
+.task-actions button:hover {
+  opacity: 0.9;
+}
+
+
+.prio-select{
+  width: 130px;
+}
+.prio-select select{
+  color:whitesmoke;
+  background-color:black;
+  border-radius: 5px;
+}
+
+
+/* Default styles for large screens (1300px and above) */
+.tasks-container {
+  width: 1300px;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+/* Medium screens: Tablets and small laptops (900px - 1299px) */
+@media (max-width: 1299px) {
+  .tasks-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .tasks-list {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+  }
+
+  .task-item {
+    width: 100%;
+    min-height: 180px;
+  }
+
+  .prio-select {
+    width: 120px;
+  }
+}
+
+/* Small screens: Tablets and mobile landscape (600px - 899px) */
+@media (max-width: 899px) {
+  .tasks-container {
+    width: 95%;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .tasks-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+  }
+
+  .task-item {
+    width: 100%;
+    min-height: 170px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .task-item h3 {
+    font-size: 18px;
+  }
+
+  .task-item p {
+    font-size: 13px;
+  }
+
+  .task-actions button {
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+
+  .prio-select {
+    width: 100px;
+  }
+}
+
+/* Extra small screens: Mobile phones (up to 599px) */
+@media (max-width: 599px) {
+  .tasks-container {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .tasks-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .task-item {
+    width: 100%;
+    min-height: 160px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .task-item h3 {
+    font-size: 16px;
+  }
+
+  .task-item p {
+    font-size: 12px;
+  }
+
+  .task-actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .task-actions button {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .prio-select {
+    width: 100%;
+  }
+}
+
+/* Hide horizontal overflow for all devices */
+* {
+  overflow-x: hidden;
+}

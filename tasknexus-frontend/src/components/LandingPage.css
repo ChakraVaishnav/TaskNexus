@@ -1,0 +1,148 @@
+/* Full page styling */
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: bold;
+}
+*{
+  font-family: "Poppins", sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 200px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+  
+  /* Subtitle */
+  .subtitle {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #bbbbbb;
+  }
+  
+  /* Buttons */
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .create-btn {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .create-btn:hover {
+    background-color: #cccccc;
+  }
+  
+  /* Login text */
+  .login-text {
+    
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ebebeb;
+  }
+  
+  .login-link {
+    color: lightblue;
+    text-decoration: none;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 120px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* For mobile devices (landscape) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 80px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+  .login-text {
+    font-size: 12px;
+  }
+}
+
+/* For mobile devices (portrait) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 50px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+  .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  .login-text {
+    font-size: 12px;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 320px) {
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .login-text {
+    font-size: 10px;
+  }
+}

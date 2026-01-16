@@ -1,0 +1,70 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-container {
+    background-color: #2f3640;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    color: #f5f6fa;
+  }
+  
+  .modal-container h2 {
+    margin-bottom: 20px;
+    color: #00a8ff;
+  }
+  
+  .modal-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #f5f6fa;
+  }
+  
+  .modal-form input,
+  .modal-form textarea,
+  .modal-form select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #353b48;
+    color: #f5f6fa;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .save-btn {
+    background-color: #00a8ff;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    width: 23vh;
+  }
+
+  .cancel-btn {
+    background-color: #e84118;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    width: 23vh;
+  }
+  .note{
+    color: red;
+  }

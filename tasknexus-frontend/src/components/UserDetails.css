@@ -1,0 +1,137 @@
+/* Main Container */
+.user-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; /* reduced from 40px */
+  padding: 10px; /* reduced from 20px */
+  background-color: #0d1117;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.verification-box{
+margin-top: 200px;
+}
+/* Common Box Styling */
+.user-details-box,
+.verification-box {
+  
+  background-color: #161b22;
+  padding: 20px; /* reduced from 30px */
+  border-radius: 10px;
+  width: 400px; /* reduced slightly */
+  max-width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+/* Input Groups */
+.input-group,
+.user-details-group {
+  margin-bottom: 10px; /* reduced from 18px */
+  background-color: #161b22;
+}
+
+/* Image Preview */
+.image-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.image-preview img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 5px;
+  border: 1px solid #30363d;
+  object-fit: cover;
+}
+
+#profile-pic {
+  background-color: grey;
+  color: white;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+/* Responsive Layout */
+@media (max-width: 900px) {
+  .user-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-details-box,
+  .verification-box {
+    width: 95%;
+  }
+
+  .user-details-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .image-preview img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
+.image-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.preview-image {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 5px;
+  border: 2px solid #30363d;
+  object-fit: cover;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.save {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save:hover {
+  background-color: #45a049;
+}
+
+.user-details-button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
